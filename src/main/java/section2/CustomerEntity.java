@@ -8,20 +8,13 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@AllArgsConstructor
-@NoArgsConstructor
 @DefaultCoder(AvroCoder.class)
+@NoArgsConstructor
+@AllArgsConstructor
 public class CustomerEntity {
-	public CustomerEntity(String id, String name) {
-		this.id = id;
-		this.name = name;
-	}
+
 
 	private String id;
 	private String name;
 
-	public String getName() {
-		// TODO Auto-generated method stub
-		return this.getName();
-	}
 }
